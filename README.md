@@ -24,3 +24,15 @@
 ```
 
 **Actualizar y verificar**
+
+## App Project
+> Para poder usar este programa debes tener las dependencias adecuadas en tu venv:
+
+```sh
+	git clone
+	cd app
+	python3 -m venv env
+	source env/bin/activate
+	pip3 install -r requirements.txt
+	python3 main.py
+```
