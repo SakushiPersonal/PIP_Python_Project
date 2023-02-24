@@ -1,0 +1,23 @@
+Crear repositorio en GITGUB
+
+Comando para enlazar e inicializar
+
+ll
+
+git init
+
+ll
+
+git remote add origin (enlace gitgub)
+
+git remote -v
+
+git add *
+
+git commit -m “Mi primer archivo”
+
+git push origin master
+
+Refrescar pagina y revisar
+
+Despues de tener los dos archivos .gitignore y README.md_ agregarlo al gitgub, revisar que esten los tres archivos cargados.
