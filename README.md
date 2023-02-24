@@ -4,7 +4,8 @@
 
 - PIP Installation and Preparations with VSC
 - Create Git & Github Repository
-- Rock, Paper, Scissors Game    
+- Rock, Paper, Scissors Game  
+- Generate charts with matplotlib  
 
 
 
