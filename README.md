@@ -6,6 +6,7 @@
 - Create Git & Github Repository
 - Rock, Paper, Scissors Game  
 - Generate charts with matplotlib  
+- Generate charts by reading CSV
 
 
 
