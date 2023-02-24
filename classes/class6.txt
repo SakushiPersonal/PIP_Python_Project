@@ -1,0 +1,35 @@
+Despues de copiar el codigo vamos ir a la terminal para correr el juego
+[codigo en este repo en la carpeta game, en el archivo main.py]
+
+- cd game/
+
+- python3 main.py
+
+#vamos a guardar el proyecto en gitgub
+#cd… ir a la carpeta padre
+#pwd verificar en donde nos encontramos
+
+- git add .
+
+- git commit -m “save game”
+
+- git push origin master
+
+#Archivo README
+
+{
+    # Game Project
+
+Para correr el juego debes seguir las siguientes instrucciones en la terminal:
+
+```sh
+cd game
+python3 main.py
+git add .
+
+git commit -m “Work in readme”
+
+git push origin master
+
+Actualizar y verificar
+}
