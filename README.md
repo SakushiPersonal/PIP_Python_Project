@@ -13,12 +13,12 @@
 > Para correr el juego debes seguir las siguientes instrucciones en la terminal (Previo a esto debes haber copiado el codigo del juego para ponerlo en tu main.py, el codigo esta en game/main.py ):
 
 
-**```sh**
-
+```sh
 	cd game
 	python3 main.py
 	git add .
 	git commit -m “Work in readme”
 	git push origin master
+```
 
 **Actualizar y verificar**
