@@ -7,7 +7,7 @@
 - Rock, Paper, Scissors Game    
 
 
-[========]
+
 ##  Game Project
 
 > Para correr el juego debes seguir las siguientes instrucciones en la terminal (Previo a esto debes haber copiado el codigo del juego para ponerlo en tu main.py, el codigo esta en game/main.py ):
