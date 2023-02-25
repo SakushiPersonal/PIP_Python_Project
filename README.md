@@ -7,6 +7,7 @@
 - Rock, Paper, Scissors Game  
 - Generate charts with matplotlib  
 - Generate charts by reading CSV
+- Reading CSV with Pandas dependenciess
 
 
 
