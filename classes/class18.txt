@@ -1,0 +1,11 @@
+services:
+  app-csv:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      -.:/app
+
+    (le indicamos que al haber una actiaalizacion o cambio en la carpeta app, los actualizara dentro de su .(carpeta raiz))
+
+**con volumes lo que logramos es que al hacer algun cambio en algun archivo que este en el contenedor, autamaticamente se actualize y asi no tendremos que estar haciendo build a cada cambio que hagamos para que se actualize el contenedor**
