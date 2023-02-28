@@ -1,0 +1,23 @@
+# instalar fastapi y uvicorn:
+'''Uvicorn nos sirve para mantener en linea nuestro servicio creado con fastapi '''
+
+
+    pip install fastapi
+    pip install "uvicorn[standard]"
+
+
+#luego, una vez configurada nuestr app con fastAPI,
+en consola levantaremos nuestra app con uvicorn:
+
+
+    uvicorn main:app --reload
+
+
+**El reload es para que cuando hagamos cambios en
+nuestr api, se apliquen automaticamente sy tener que hacer
+la actualizacion manual**
+
+#Luego este comando nos devolvera informacion, que dentro de esa,
+nos entregara una IP(la nuestra local) y el puerto por donde se esta
+trasmitiendo.
+#ingresamos a la direccion ip y podremos ver nuestra api tal como la configuramos.
