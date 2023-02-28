@@ -8,6 +8,7 @@
 - Generate charts with matplotlib  
 - Generate charts by reading CSV
 - Reading CSV with Pandas dependenciess
+- Set ONLINE FastAPI apps with uvicorn
 
 
 
@@ -36,4 +37,17 @@
 	source env/bin/activate
 	pip3 install -r requirements.txt
 	python3 main.py
+```
+
+## FastAPI & Uvicorn
+>Crear apps con FastAPI y levantarlas en la web con Uvicorn:
+
+```sh
+	pip install fastapi
+    pip install "uvicorn[standard]"
+```
+**Creas tu app con FastAPI y luego la levantas en consola con uvicorn**
+
+```sh
+	uvicorn main:app --reload
 ```
