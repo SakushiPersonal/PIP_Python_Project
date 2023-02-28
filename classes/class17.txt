@@ -1,0 +1,43 @@
+***CREATE A DOCKERFILE WITH THIS INSIDE***
+
+    FROM python:3.8
+
+    WORKDIR /app
+    COPY requirements.txt /app/requirements.txt
+    (copying our requirements.txt in a app directory in docker)
+
+    RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+    (we're telling to docker to run and install by pip all our dependencies nedded for uor app to work, without cache and if is there a better version of any dependecy, upgrade it automatically)
+
+    COPY . /app
+    (here it's copying all in our app directory to a directory in docker called app)
+
+    CMD bash -c "while true; do sleep 1; done"
+    (a command in bash to maintain our app running)
+
+
+***LUEGO CREAS UN ARCHIVO "docker-compose-yml", EL CUAL DECLARARA DONDE Y COMO SE INICIALIZARA NUESTRO CONTENEDOR***
+
+    services:
+    app-csv:
+        build: 
+        context: .
+        dockerfile: Dockerfile
+
+***LUEGO EN CONSOLA USAREMOS EL SIGUIENTE COMANDO***
+
+    docker-compose build
+
+**Si es que no nos funciona verificaremos si es que tenemos corriendo docker en nuestro equipo, deberia solucionarse solo con tener docker activo**
+
+***PARA LEVANTAR EL CONTENEDOR RECIEN CREADO EJECUTAMOS EL SIGUIENTE COMANDO***
+
+    docker-compose up -d
+
+**Para verificar el estado de nuestro contenedor podemos usar el comando "docker-compose ps" y nos mostrara los servicions de docker que tenemos levantados**
+
+***PARA PODER EJECUTAR NUSTROS SCRIPTS EN DOCKER LO EJECUTAMOS CON UNA TERMINAL BASH Y LE INDICAMOS QUE SERVICIO QUEREMOS EJECUTAR (EL NOMBRE DEL SERVICIO LO VEMOS CON "docker-compose ps")***
+
+    docker-compose exec app-csv bash
+
+***FINALMENTE OPERAMOS DENTRO DE NUESTRO CONTENEDOR NUESTROS SCRIPTS COMO SI ESTUVIESEMOS EN UNA TERMINAL BASH CUALQUIERA***

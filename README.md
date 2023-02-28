@@ -9,6 +9,7 @@
 - Generate charts by reading CSV
 - Reading CSV with Pandas dependenciess
 - Set ONLINE FastAPI apps with uvicorn
+- Create containers with Docker for my Apps/Scripts and run them
 
 
 
